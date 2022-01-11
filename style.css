@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth ;
+}
+
+/* general Css Style */
+section{
+    padding: 80px;
+}
+
+/* Navigation and Logo */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2 ;
+    transition: 0.5s;
+}
+
+header .logo img{
+    width: 11%;
+    /* color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px; */
+}
+
+header .toggle{
+    display: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    
+}
+
+header ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none ;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 19px;
+}
+
+/* sticky header menu */
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+/* Creating Banner Area In CSS */
+.banner{
+    position: relative;
+    min-height:  100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: #111;
+    background: url(images/initiative-youth-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner h2{
+    font-size: 3.5vw;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.banner h3{
+    font-size: 2.0vw;
+    color: #fff;
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background: #800020;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Responsive section */
+@media (max-width: 1024px) {
+    header,
+    header.sticky{
+        padding:20px 50px;
+    }
+
+    header .menu{
+        display: none;
+    }
+
+    header .menu{
+        position: fixed;
+        background: #fff;
+        display: block;
+        top: 75px;
+        left: -100%;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba( 0,0,0,0.2);
+        transition: 0.5s;
+    }
+
+    header .menu.active{
+        position: fixed;
+        background: #fff;
+        display: block;
+        top: 75px;
+        left: 0;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba( 0,0,0,0.2);
+    }
+
+    header ul li a{
+        font-size: 20px;
+        color:  #111;
+        font-weight: 400;
+        margin: 10px 0 ;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background-image: url(/images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background-image: url(/images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle{
+        filter:invert(1)
+    }
+
+    .banner{
+        display: flex;
+        justify-content: center;
+    }
+}
