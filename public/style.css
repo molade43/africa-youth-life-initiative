@@ -81,21 +81,21 @@ header.sticky ul li a {
     justify-content: right;
     align-items: center;
     background: #111;
-    background: url(images/initiative-youth-image.png);
+    background: url(images/initiative-youth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .banner h2{
-    font-size: 3.5vw;
+    font-size: 22px;
     color: #ffffff;
     font-weight: 300;
     line-height: 1.5em;
 }
 
 .banner h3{
-    font-size: 2.0vw;
+    font-size: 20px;
     color: #fff;
     font-weight: 500;
 }
@@ -114,7 +114,7 @@ header.sticky ul li a {
 }
 
 /* Responsive section */
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 320px){
     header,
     header.sticky{
         padding:20px 50px;
@@ -180,9 +180,24 @@ header.sticky ul li a {
     header.sticky .toggle{
         filter:invert(1)
     }
+    header .logo img{
+        width: 20vw;
+        margin-left: -25px;
+    }
 
     .banner{
         display: flex;
         justify-content: center;
+        text-align: center;
+        background-position: center!important;
+    }
+    .banner h2{
+        font-size: 8vw;
+        text-align: center;
+    }
+    
+    .banner h3{
+        font-size: 3vw;
+        text-align: center;
     }
 }
