@@ -8,7 +8,7 @@
 
 /* general Css Style */
 section{
-    width: 1000px;
+    width: 1200px;
     padding: 80px;
 }
 
@@ -90,14 +90,14 @@ header.sticky ul li a {
 }
 
 .banner h2{
-    font-size: 22px;
+    font-size: xx-large;
     color: #ffffff;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.5em;
 }
 
 .banner h3{
-    font-size: 20px;
+    font-size: x-large;
     color: #fff;
     font-weight: 500;
 }
@@ -174,7 +174,7 @@ header.sticky ul li a {
 }
 
 .rowBxImg{
-    max-width: 700px;
+    max-width: 600px;
     /* border: 1px solid; */
     padding: 10px 30px;
 }
@@ -183,7 +183,7 @@ header.sticky ul li a {
     border-radius: 10px;
 }
 .rowBxText{
-    max-width: 702px;
+    max-width: 602px;
     /* border: 1px solid; */
     padding: 20px;
     word-wrap: break-word;
@@ -256,6 +256,88 @@ header.sticky ul li a {
 }
 
 
+/* Footer section */
+.footer-distributed {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #111;
+    background: #fefefe;
+  }
+  .footerBx{
+    width: 100%;
+    margin: 10px 15px;
+    padding: 40px 25px;
+    max-width: 460px;
+    transition: transform 0.5s;
+  }
+  
+  .footer-distributed .left {
+    /* width: 350px; */
+  }
+  
+  .footer-distributed .left img {
+    width: 30%;
+  }
+  
+  .footer-distributed .left a {
+    font-weight: 400;
+    text-decoration: none;
+    border-right: 2px solid;
+    padding-right: 10px;
+  }
+  
+  .footer-distributed .center {
+    /* width: 350px; */
+  }
+  
+  .footer-distributed .center div {
+    display: flex;
+  }
+  
+  .footer-distributed .center div a {
+    width: 35px;
+  }
+  
+  .footer-distributed .center div a i {
+    color: #000;
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .footer-distributed .center div p {
+    align-self: center;
+    padding-left: 10px;
+  }
+  
+  .footer-distributed .right {
+    /* width: 350px; */
+  }
+  
+  .footer-distributed .right p {
+    line-height: 20px;
+  }
+  
+  .footer-distributed .right p span {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .right .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .right .footer-icons a {
+    text-decoration: none;
+  }
+  
+  .footer-distributed .right .footer-icons a i {
+    border-radius: 3px;
+  }
 
 /* Responsive section */
 @media only screen and (max-width: 1024px) and (min-width: 320px){
@@ -343,5 +425,11 @@ header.sticky ul li a {
     .banner h3{
         font-size: 3vw;
         text-align: center;
+    }
+    /* footer */
+    .footer-distributed{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
